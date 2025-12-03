@@ -2,6 +2,25 @@
   "name": "next-portfolio-sumit",
   "version": "1.0.0",
   "private": true,
+  "description": "Professional portfolio website built with Next.js and TailwindCSS showcasing AI/ML projects and skills",
+  "keywords": [
+    "nextjs",
+    "portfolio",
+    "ai",
+    "machine-learning",
+    "tailwindcss",
+    "react"
+  ],
+  "homepage": "https://github.com/sumit-b-freelancer/personal_protofilo#readme",
+  "bugs": {
+    "url": "https://github.com/sumit-b-freelancer/personal_protofilo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sumit-b-freelancer/personal_protofilo.git"
+  },
+  "author": "SUMIT BADAKE <sumitbadake@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
