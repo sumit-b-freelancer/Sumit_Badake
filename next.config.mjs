@@ -9,6 +9,16 @@ const nextConfig = {
 
 export default nextConfig;
 const nextConfig = {
+  output: 'export',
+  basePath: '/my_portfolio',
+  images: {
+    unoptimized: true,
+  },
+  reactStrictMode: true,
+};
+
+export default nextConfig;
+const nextConfig = {
   reactStrictMode: true,
 };
 
