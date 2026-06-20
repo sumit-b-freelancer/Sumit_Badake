@@ -11,10 +11,10 @@ export default function About(){
   
   const education = [
     {
-      degree: 'B.E (AI & DS)',
+      degree: 'B.E (Artificial intelligence and data science)',
       institution: 'KLE College of Engineering and Technology, Chikodi',
       year: '2022-2026',
-      score: '8.2 CGPA'
+      score: '8.4 CGPA'
     },
     {
       degree: 'PUC (Science)',
