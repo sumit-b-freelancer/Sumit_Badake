@@ -1,21 +1,22 @@
+import Link from 'next/link'
 import Hero from '../components/Hero'
 import ProjectCard from '../components/ProjectCard'
 
 const projects = [
   {
-    title: 'Movie Genre Prediction',
-    desc: 'Developed a machine learning model to predict movie genres based on plot summaries, using natural language processing techniques (TF-IDF, word embeddings) and classification algorithms such as Naive Bayes, Logistic Regression, and SVM.',
-    tech: ['Python', 'scikit-learn', 'NLP', 'TF-IDF']
+    title: 'RetrievalDocBot — RAG PDF Chatbot',
+    desc: 'Uses LangChain, OpenAI, FAISS, and Streamlit for intelligent Q&A from uploaded PDFs with semantic search.',
+    tech: ['Python', 'LangChain', 'OpenAI', 'FAISS', 'Streamlit']
   },
   {
-    title: 'Spam Mail Detection',
-    desc: 'Built a spam detection model using Logistic Regression and TF-IDF vectorization to classify emails as spam or not. Achieved significant accuracy improvement through feature engineering and hyperparameter tuning.',
-    tech: ['Python', 'scikit-learn', 'Logistic Regression', 'TF-IDF']
+    title: 'Sentinel-Vision — Defect Detection',
+    desc: 'Uses EfficientNet-V2, Vision Transformers, and Grad-CAM for autonomous manufacturing defect detection with MLOps.',
+    tech: ['Python', 'PyTorch', 'Django', 'Docker', 'FastAPI', 'Kubernetes']
   },
   {
-    title: 'Real Time Image Animation',
-    desc: 'Built a model using GANs and VAEs to animate images in different formats used for animation. Used sketch book, 90s anime, cyberpunk anime, chibi anime by training machine learning tools.',
-    tech: ['Python', 'PyTorch', 'GANs', 'VAEs']
+    title: 'Crime Detection using YOLOv8',
+    desc: 'Uses Flask, OpenCV, and YOLOv8 for real-time violence detection and facial recognition with auto alerts.',
+    tech: ['Python', 'Flask', 'OpenCV', 'YOLOv8', 'MongoDB', 'Docker']
   }
 ]
 
@@ -38,12 +39,12 @@ export default function Home(){
         </div>
         
         <div className="text-center mt-12">
-          <a href="/projects" className="btn-secondary inline-flex items-center">
+          <Link href="/projects" className="btn-secondary inline-flex items-center">
             View All Projects
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-          </a>
+          </Link>
         </div>
       </section>
       

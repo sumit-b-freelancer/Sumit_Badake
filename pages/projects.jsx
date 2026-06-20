@@ -2,34 +2,59 @@ import ProjectCard from '../components/ProjectCard'
 
 const projects = [
   {
+    title: 'RetrievalDocBot — RAG PDF Chatbot',
+    desc: 'Uses LangChain, OpenAI, FAISS, and Streamlit for intelligent Q&A from uploaded PDFs with semantic search.',
+    tech: ['Python', 'LangChain', 'OpenAI', 'FAISS', 'Streamlit']
+  },
+  {
+    title: 'Sentinel-Vision — Defect Detection',
+    desc: 'Uses EfficientNet-V2, Vision Transformers, and Grad-CAM for autonomous manufacturing defect detection with MLOps.',
+    tech: ['Python', 'PyTorch', 'Django', 'Docker', 'FastAPI', 'Kubernetes']
+  },
+  {
+    title: 'AI Resume Analyzer Pro',
+    desc: 'Uses spaCy, sentence-transformers, and FAISS for ATS scoring, skill-gap detection, and AI rewrite suggestions.',
+    tech: ['Python', 'Streamlit', 'NLP', 'FAISS', 'spaCy']
+  },
+  {
     title: 'Offline AI Summarizer',
-    desc: 'A Django web application that summarizes text, documents, and YouTube videos using AI models running locally (offline). Features offline operation, multiple input methods (plain text, PDF/DOCX documents, YouTube URLs), and optimized performance for limited hardware.',
-    tech: ['Python', 'Django', 'PyTorch', 'Hugging Face', 'BART-Large-CNN']
+    desc: 'Uses BART-Large-CNN on Django for text, PDF/DOCX, and YouTube summarization running entirely offline.',
+    tech: ['Python', 'Django', 'Hugging Face', 'BART-Large-CNN']
   },
   {
-    title: 'Movie Genre Prediction',
-    desc: 'Developed a machine learning model to predict movie genres based on plot summaries, using natural language processing techniques (TF-IDF, word embeddings) and classification algorithms such as Naive Bayes, Logistic Regression, and SVM.',
-    tech: ['Python', 'scikit-learn', 'NLP', 'TF-IDF']
+    title: 'Crime Detection using YOLOv8',
+    desc: 'Uses Flask, OpenCV, and YOLOv8 for real-time violence detection and facial recognition with auto alerts.',
+    tech: ['Python', 'Flask', 'OpenCV', 'YOLOv8', 'MongoDB', 'Docker']
   },
   {
-    title: 'Spam Mail Detection',
-    desc: 'Built a spam detection model using Logistic Regression and TF-IDF vectorization to classify emails as spam or not. Achieved significant accuracy improvement through feature engineering and hyperparameter tuning.',
-    tech: ['Python', 'scikit-learn', 'Logistic Regression', 'TF-IDF']
+    title: 'Movie Genre Predictor',
+    desc: 'Uses NLP and ML on Django for predicting movie genres from plot descriptions with confidence scores.',
+    tech: ['Python', 'Django', 'scikit-learn', 'NLP', 'TF-IDF']
   },
   {
-    title: 'Online Voting Management System',
-    desc: 'A comprehensive Full-Stack Online Voting Management System designed to facilitate secure, transparent, and efficient elections for organizations, institutions, or small-scale public polls. Leveraging a full-stack architecture, it ensures a robust and seamless experience across all stages.',
-    tech: ['Full-Stack', 'HTML5', 'PHP', 'SQL']
+    title: 'CyberGuard — Spam Detection',
+    desc: 'Uses TF-IDF + Logistic Regression on Django 5.x for real-time spam analysis with cybersecurity-themed UI.',
+    tech: ['Python', 'Django', 'scikit-learn', 'Logistic Regression', 'TF-IDF']
   },
   {
     title: 'Real Time Image Animation',
-    desc: 'Built a model using GANs and VAEs to animate images in different formats used for animation. Used sketch book, 90s anime, cyberpunk anime, chibi anime by training machine learning tools.',
-    tech: ['Python', 'PyTorch', 'GANs', 'VAEs']
+    desc: 'Uses Stable Diffusion img2img with AnimeGAN fallback for styled image generation and animated GIF creation.',
+    tech: ['Python', 'Django', 'PyTorch', 'Stable Diffusion', 'GANs']
   },
   {
     title: 'Advanced Weather Forecasting',
-    desc: 'A machine learning-based weather forecasting system that provides highly accurate, long-range predictions using advanced atmospheric physics, sensor fusion, and predictive analytics. It forecasts temperature, precipitation, air quality, localized wind shear, and agricultural indices.',
-    tech: ['Python', 'TensorFlow', 'Keras', 'PyTorch', 'Pandas', 'NumPy', 'Flask', 'Plotly']
+    desc: 'Uses LSTM/GRU and ensemble methods on massive datasets for long-range weather prediction with REST API.',
+    tech: ['Python', 'TensorFlow', 'Keras', 'PyTorch', 'Pandas', 'NumPy']
+  },
+  {
+    title: 'Insight Mail — Email Sentiment Analysis',
+    desc: 'Uses ML models for automated email sentiment analysis with privacy-first classification and priority scoring.',
+    tech: ['Python', 'ML', 'NLP', 'Classification']
+  },
+  {
+    title: 'Smart3DS — Interactive Education',
+    desc: 'Uses AI chatbot and quizzes for interactive education with Docker-based deployment.',
+    tech: ['HTML', 'CSS', 'Docker', 'AI']
   }
 ]
 
@@ -49,7 +74,7 @@ export default function Projects(){
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
-              <span>20+ AI/ML Projects Completed</span>
+              <span>11 AI/ML Projects Completed</span>
             </div>
           </div>
           <div className="flex justify-center">

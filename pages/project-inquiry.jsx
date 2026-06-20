@@ -22,45 +22,28 @@ export default function ProjectInquiry() {
     }))
   }
   
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     setStatus('sending')
     
-    try {
-      // Send data to the contact API endpoint (now handles both contact and project inquiries)
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+    const subject = encodeURIComponent(`Project Inquiry: ${formData.projectType}`)
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nProject Type: ${formData.projectType}\nBudget: ${formData.budget}\nTimeline: ${formData.timeline}\n\nDescription:\n${formData.description}`
+    )
+    window.location.href = `mailto:sumitbadake@gmail.com?subject=${subject}&body=${body}`
+    
+    setStatus('success')
+    setTimeout(() => {
+      setFormData({
+        name: '',
+        email: '',
+        projectType: '',
+        description: '',
+        budget: '',
+        timeline: ''
       })
-      
-      const result = await response.json()
-      
-      if (response.ok) {
-        setStatus('success')
-        
-        // Reset form after successful submission
-        setTimeout(() => {
-          setFormData({
-            name: '',
-            email: '',
-            projectType: '',
-            description: '',
-            budget: '',
-            timeline: ''
-          })
-          setStatus(null)
-        }, 3000)
-      } else {
-        setStatus('error')
-        console.error('Error submitting form:', result.error)
-      }
-    } catch (error) {
-      setStatus('error')
-      console.error('Network error:', error)
-    }
+      setStatus(null)
+    }, 3000)
   }
   
   const projectTypes = [

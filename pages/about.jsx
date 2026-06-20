@@ -2,10 +2,10 @@ import SkillPill from '../components/SkillPill'
 
 export default function About(){
   const skills = [
-    { category: 'AI/ML', items: ['Deep Learning', 'NLP', 'Computer Vision', 'Transformers', 'LLMs', 'TensorFlow', 'Keras', 'PyTorch'] },
-    { category: 'Data Engineering', items: ['Data Cleaning', 'Feature Engineering', 'Predictive Modeling', 'ETL', 'Big Data', 'Snowflake', 'Kafka'] },
-    { category: 'Cloud', items: ['AWS', 'Google Cloud', 'Azure', 'Docker', 'Kubernetes'] },
-    { category: 'Programming', items: ['Python', 'C', 'HTML5', 'PHP', 'SQL'] }
+    { category: 'AI/ML', items: ['Deep Learning', 'NLP', 'Computer Vision', 'Transformers', 'LLMs', 'TensorFlow', 'Keras', 'PyTorch', 'scikit-learn', 'LangChain', 'OpenAI', 'YOLOv8', 'Stable Diffusion', 'FAISS'] },
+    { category: 'Data Engineering', items: ['Pandas', 'NumPy', 'Matplotlib', 'MLflow', 'Dask', 'Apache Spark', 'Feature Engineering', 'ETL'] },
+    { category: 'Cloud & DevOps', items: ['AWS', 'Google Cloud', 'Azure', 'Docker', 'Kubernetes', 'Jenkins', 'GitHub Actions', 'GitLab CI', 'FastAPI'] },
+    { category: 'Web & Databases', items: ['Python', 'Java', 'Django', 'Flask', 'Streamlit', 'MySQL', 'PostgreSQL', 'MongoDB', 'SQLite', 'HTML5', 'React'] }
   ]
   
   const education = [
@@ -42,12 +42,12 @@ export default function About(){
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center p-4 glass-card">
-                <div className="text-3xl font-bold text-cyan-400 mb-1">20+</div>
+                <div className="text-3xl font-bold text-cyan-400 mb-1">11</div>
                 <div className="text-gray-400 text-sm">Projects</div>
               </div>
               <div className="text-center p-4 glass-card">
-                <div className="text-3xl font-bold text-cyan-400 mb-1">3</div>
-                <div className="text-gray-400 text-sm">Internships</div>
+                <div className="text-3xl font-bold text-cyan-400 mb-1">30+</div>
+                <div className="text-gray-400 text-sm">Technologies</div>
               </div>
               <div className="text-center p-4 glass-card">
                 <div className="text-3xl font-bold text-cyan-400 mb-1">6+</div>

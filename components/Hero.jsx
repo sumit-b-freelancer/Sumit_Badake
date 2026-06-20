@@ -21,9 +21,9 @@ export default function Hero(){
               Building intelligent systems, scalable cloud solutions, and real-world ML applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="/resume.pdf" download className="btn-primary">
+              <Link href="/resume.pdf" download className="btn-primary">
                 Download Resume
-              </a>
+              </Link>
               <Link href="/projects" className="btn-secondary">
                 View Projects
               </Link>

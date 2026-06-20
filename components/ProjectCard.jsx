@@ -1,12 +1,17 @@
 export default function ProjectCard({project}) {
   // Map project titles to GitHub repository URLs
   const projectLinks = {
+    'RetrievalDocBot — RAG PDF Chatbot': 'https://github.com/sumit-b-freelancer/Advanced_retrival_DOC_bot',
+    'Sentinel-Vision — Defect Detection': 'https://github.com/sumit-b-freelancer/manufacturing-defect-analyzer',
+    'AI Resume Analyzer Pro': 'https://github.com/sumit-b-freelancer/Advanced-AI_powered_resume_anlyzer',
     'Offline AI Summarizer': 'https://github.com/sumit-b-freelancer/AI_summrization-using-Django-framework',
+    'Crime Detection using YOLOv8': 'https://github.com/sumit-b-freelancer/crime_detection_using_YOLOv8',
+    'Movie Genre Predictor': 'https://github.com/sumit-b-freelancer/Movie_genre_predctors',
+    'CyberGuard — Spam Detection': 'https://github.com/sumit-b-freelancer/spam_mail_detection_using_ML_models',
+    'Real Time Image Animation': 'https://github.com/sumit-b-freelancer/Realtime-image-animation-using-deep-learing',
     'Advanced Weather Forecasting': 'https://github.com/sumit-b-freelancer/Advanced-weather-forecasting1',
-    'Movie Genre Prediction': 'https://github.com/sumit-b-freelancer/Movie_genre_predctors',
-    'Spam Mail Detection': 'https://github.com/sumit-b-freelancer/spam_mail_detection_using_ML_models',
-    'Online Voting Management System': '#',
-    'Real Time Image Animation': 'https://github.com/sumit-b-freelancer/Realtime-image-animation-using-deep-learing'
+    'Insight Mail — Email Sentiment Analysis': 'https://github.com/sumit-b-freelancer/Insight-Mail-Continuity',
+    'Smart3DS — Interactive Education': 'https://github.com/sumit-b-freelancer/Smart3DS--interactive-education-with-AI-chatbot-and-quizzes'
   };
 
   const githubUrl = projectLinks[project.title] || '#';

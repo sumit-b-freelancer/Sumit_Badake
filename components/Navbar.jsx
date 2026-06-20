@@ -13,9 +13,9 @@ export default function Navbar(){
           <Link href="/freelance" className="text-gray-300 hover:text-cyan-400 transition-colors">Freelance</Link>
           <Link href="/achievements" className="text-gray-300 hover:text-cyan-400 transition-colors">Achievements</Link>
           <Link href="/contact" className="text-gray-300 hover:text-cyan-400 transition-colors">Contact</Link>
-          <a href="/resume.pdf" download className="btn-secondary">
+          <Link href="/resume.pdf" download className="btn-secondary">
             Resume
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

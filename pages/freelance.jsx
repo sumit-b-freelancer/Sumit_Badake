@@ -166,9 +166,9 @@ export default function Freelance() {
           <Link href="/project-inquiry" className="btn-primary">
             Start Your Project
           </Link>
-          <a href="/resume.pdf" download className="btn-secondary">
+          <Link href="/resume.pdf" download className="btn-secondary">
             View My Resume
-          </a>
+          </Link>
         </div>
       </div>
     </div>

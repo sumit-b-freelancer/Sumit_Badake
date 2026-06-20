@@ -1,18 +1,15 @@
 import { useState } from 'react'
-import axios from 'axios'
 
 export default function Contact(){
   const [form, setForm] = useState({name:'',email:'',message:''})
   const [status, setStatus] = useState(null)
 
-  const submit = async (e)=>{
+  const submit = (e)=>{
     e.preventDefault()
-    try{
-      const res = await axios.post('/api/contact', form)
-      if(res.status===200) setStatus('Message sent!')
-    }catch(err){
-      setStatus('Error sending message')
-    }
+    const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`)
+    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`)
+    window.location.href = `mailto:sumitbadake@gmail.com?subject=${subject}&body=${body}`
+    setStatus('Opening your email client...')
   }
 
   return (
