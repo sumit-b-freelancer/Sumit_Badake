@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import SkillPill from '../components/SkillPill'
 
 export default function About(){
@@ -65,9 +66,11 @@ export default function About(){
               <div className="glass-card p-6 backdrop-blur-xl rounded-2xl border-cyan-400/30 relative z-10">
                 <div className="flex justify-center mb-4">
                   <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-cyan-400/50">
-                    <img 
-                      src="/images/profile.jpg" 
-                      alt="Sumit Badake" 
+                    <Image
+                      src="/images/profile.jpg"
+                      alt="Sumit Badake"
+                      width={192}
+                      height={192}
                       className="w-full h-full object-cover"
                     />
                   </div>

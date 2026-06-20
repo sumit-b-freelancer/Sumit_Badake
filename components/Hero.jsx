@@ -1,9 +1,9 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Hero(){
   return (
     <section className="hero-gradient py-20 rounded-3xl mb-16 relative overflow-hidden">
-      {/* Animated background elements */}
       <div className="absolute top-10 left-10 w-64 h-64 bg-cyan-500 rounded-full filter blur-[100px] opacity-20 animate-pulse"></div>
       <div className="absolute bottom-10 right-10 w-64 h-64 bg-blue-500 rounded-full filter blur-[100px] opacity-20 animate-pulse"></div>
       
@@ -41,10 +41,13 @@ export default function Hero(){
               <div className="glass-card p-8 backdrop-blur-xl rounded-2xl border-cyan-400/30 relative z-10 float-animation">
                 <div className="flex justify-center mb-6">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-cyan-400/50">
-                    <img 
-                      src="/images/profile.jpg" 
-                      alt="Sumit Badake" 
+                    <Image
+                      src="/images/profile.jpg"
+                      alt="Sumit Badake"
+                      width={320}
+                      height={320}
                       className="w-full h-full object-cover"
+                      priority
                     />
                   </div>
                 </div>
